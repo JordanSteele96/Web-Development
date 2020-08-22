@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.login-container{
+    width: 350px;
+    height: 450px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #F2F2F3;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius:5px;
+
+}
+input[type="text"], input[type="password"]{ 
+    position: relative;
+    font-size: 13pt;
+    text-size-adjust: 50pt;
+    border:0;
+    display: block;
+    background-color: white;
+    height: 30px;
+    border: 1px solid grey;
+    margin: 0px auto;
+    height:45px;
+    width:275px;
+    top:50px;
+    text-indent:4%;
+}
+.submit{
+    position: relative;
+    top: 55px;
+    background: #007bff;
+    height:50px;
+    width:282px;
+    font-size: 13pt;
+    border-radius: 5px;
+    color: white;
+}
+.userLoginImage{
+    position: relative;
+    top:15px;
+    border-radius:50%;
+    height:30%;
+}
+input[type="checkbox"]{
+    position: relative;
+    left: 32px;
+    top: 64px;
+    display: block;
+}
+.staysignedin{
+    position: relative;
+    top: 46px;
+    display: block;
+    right: 79px;
+}
+.needhelp{
+    position: relative;
+    bottom:-8px;
+    left: 98px;
+
+}
+.bottom-container{
+    width: 350px;
+    height: 75px;
+    padding: 10px;
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.header img{
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.header{
+    text-align: center;
+}

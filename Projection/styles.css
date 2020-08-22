@@ -1,0 +1,394 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.top-page {
+  background-image: url(images/banner.jpg);
+  height: 93vh;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.top-page::before {
+  content: "";
+  background: rgba(75, 75, 93, 0.85);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 11vh;
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  list-style-type: none;
+  z-index: 1;
+}
+.nav-links li {
+  padding-right: 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+.logo {
+  color: white;
+  z-index: 1;
+  margin-left: 1%;
+}
+.burger-menu {
+  display: none;
+  z-index: 1;
+}
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  flex-direction: column;
+  width: 100%;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  width: 73%;
+  border-top: 2px solid rgb(207, 207, 207);
+}
+.title {
+  color: white;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.three-boxes {
+  display: flex;
+  color: white;
+  z-index: 1;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 50px;
+}
+
+.icon {
+  color: #6cc091;
+  font-size: 60px;
+}
+
+.three-boxes h3 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.box-two {
+  border-right: 1.3px solid rgb(153, 153, 153, 0.5);
+  border-left: 1.3px solid rgb(153, 153, 153, 0.5);
+}
+
+.three-boxes p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1em;
+}
+
+.box {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.btn {
+  height: 50px;
+  width: 100px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 200px;
+  background-color: Transparent;
+  border: 2.5px solid #6cc091;
+  color: #6cc091;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: rgba(105, 231, 143, 0.164);
+  transition: 0.3s;
+}
+#close {
+  display: none;
+}
+
+.middle-container {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+
+.info {
+  width: 25%;
+  text-align: center;
+}
+
+.info img {
+  border-radius: 100px;
+}
+
+.info h2 {
+  color: #555;
+  margin: 10px 0 20px 0;
+}
+
+.info p {
+  color: #9a9a9a;
+  margin-bottom: 25px;
+}
+
+.bottom-container {
+  height: 750px;
+  width: 100%;
+  background-color: #6cc091;
+  margin-top: 105px;
+}
+
+.headingbottom {
+  text-align: center;
+  padding: 70px;
+  color: white;
+  font-size: 28px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3.5fr 7fr;
+  gap: 1px 50px;
+  grid-template-areas: "Name Email" "Message Message";
+  margin-right: 14%;
+  margin-left: 14%;
+}
+
+.Name {
+  grid-area: Name;
+}
+
+.Email {
+  grid-area: Email;
+}
+
+.Message {
+  grid-area: Message;
+}
+
+.upper-contact {
+  width: 100%;
+  height: 50px;
+}
+
+.lower-contact {
+  width: 100%;
+  height: 200px;
+}
+
+.form-box {
+  background-color: #6cc091;
+  border: 2.25px solid #8dcca9;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.form-box:focus {
+  border: 2.25px solid #4fb07a;
+  outline: none;
+}
+.form-text {
+  color: white;
+  font-size: 18px;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  flex-direction: column;
+}
+.contact-btn {
+  height: 50px;
+  width: 100px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 200px;
+  background-color: Transparent;
+  border: 2.5px solid white;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.bottomtext {
+  padding-top: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .title {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 17fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "Name" "Email" "Message";
+  }
+
+  .upper-contact {
+    width: 100%;
+  }
+
+  .lower-contact {
+    width: 100%;
+  }
+
+  .form-text {
+    color: white;
+    font-size: 18px;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    background-color: #6cc091;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .three-boxes {
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+  }
+  .title {
+    font-size: 1em;
+  }
+  .box-two {
+    border: none;
+  }
+  .box {
+    padding: 15px 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #close {
+    position: absolute;
+    color: rgba(160, 255, 234, 0.555);
+    right: 20px;
+    top: 20px;
+    display: flex;
+    cursor: pointer;
+  }
+  .nav-links {
+    position: absolute;
+    justify-content: start;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    background-color: #6cc091;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+    transform: translateX(101%);
+    z-index: 2;
+  }
+  .nav-links li {
+    padding-right: 0px;
+    padding-left: 2px;
+    margin-top: 20px;
+  }
+  .middle {
+    border: 1px solid #8dcca9;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+  transition: 0.25s ease-out;
+}
+
+@media screen and (max-width: 890px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .middle-container {
+    display: flex;
+    width: 90%;
+
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 50%;
+    text-align: center;
+  }
+
+  .rightside {
+    padding-top: 35px;
+  }
+}

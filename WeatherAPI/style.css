@@ -1,0 +1,81 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #F1F1F1;
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+#searhBox{
+  width: 480px;
+  height: 50px;
+  border:none;
+  border-bottom: 3px solid black;
+  background-color: #F1F1F1;
+  font-size: 30px;
+}
+
+#searhBox[type=text]:focus{
+  background-color: #F8F8F8;
+  outline:0;
+}
+
+.search-container button{
+  background:#F1F1F1;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 30px;
+}
+
+.main-body{
+  background-color: #A6DAFF;
+  margin: auto;
+  margin-top: 10px;
+  width: 525px;
+  border-radius: 10px;
+  height: 550px;
+}
+
+.location{
+  text-align: center;
+  font-size: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 5px;
+  margin-left: 22px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
+  height: 405px;
+  width: 475px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #A0FFD4;
+  border: none;
+  width: 215px;
+  height: 205px;
+}
+
+.box-heading{
+  margin-top: 0px;
+  text-align: center;
+}
+
+
+.grid-item h2{
+text-align: left;
+}

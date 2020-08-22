@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  background-color: #09284e;
+}
+
+.main {
+  height: 100vh;
+  overflow: hidden;
+  min-width: 960px;
+}
+
+.player1Side {
+  height: 100vh;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.player2Side {
+  height: 100vh;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.selectOption {
+  background-color: #214470;
+  float: left;
+  height: 100vh;
+  width: 250px;
+}
+.userOptions {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30%;
+}
+.imageRock {
+  margin-top: 35%;
+}
+
+.userTurn {
+  margin: 0;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #09284e;
+}
+
+#playersChoice {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#computerChoice {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.score {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.btn-difficulty {
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 0.9%;
+  margin-top: 3%;
+}
+
+.userOptions {
+  width: 50%;
+  height: 18%;
+}

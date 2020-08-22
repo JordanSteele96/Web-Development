@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #256f5b;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px #6fa798 solid;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#timer {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.main h1 {
+  font-size: 100px;
+  color: #0d2b26;
+}
+.main h2 {
+  width: 20px;
+  margin-top: -15px;
+  margin-left: 0px;
+  padding-left: 8px;
+  background-color: #256f5b;
+  width: 34%;
+  color: #0d2b26;
+}
+
+.buttons-main {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons-main button {
+  background-color: #1e5c4b; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

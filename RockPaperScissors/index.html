@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="gameArea">
+      <div class="selectOption">
+        <div class="difficulty">
+          <button
+            onclick="difficulty(1)"
+            id="btn-difficult-one"
+            class="btn-difficulty active"
+          >
+            Possible
+          </button>
+          <button
+            onclick="difficulty(2)"
+            id="btn-difficult-two"
+            class="btn-difficulty"
+          >
+            Impossible
+          </button>
+        </div>
+        <!-- place rock paper and scissors-->
+        <img
+          src="images/rock.png"
+          class="userOptions imageRock"
+          onclick="decision(1)"
+        />
+        <img
+          src="images/paper.png"
+          class="userOptions imagePaper"
+          onclick="decision(2)"
+        />
+        <img
+          src="images/scissor.png"
+          class="userOptions imageScissor"
+          onclick="decision(3)"
+        />
+      </div>
+      <div class="main">
+        <div class="player1Side">
+          <!-- display the choice of the user(rock paper or scissors)-->
+
+          <h2 class="score playerScore" id="uScore">You: 0</h2>
+
+          <div class="userChoice">
+            <div id="playersChoice"></div>
+            <button class="userTurn" onclick="readybutton()">Go!</button>
+          </div>
+        </div>
+        <div class="player2Side">
+          <div class="computersMove">
+            <h2 class="score computerScore" id="cScore">Computer: 0</h2>
+            <h2 id="computerChoice"></h2>
+            <!-- display the choice of the computer(rock paper or scissors)-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

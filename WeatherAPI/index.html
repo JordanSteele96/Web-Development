@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="search-container">
+      <input
+        type="text"
+        id="searhBox"
+        placeholder="Enter Location"
+        name="search"
+      />
+      <button type="submit" value="Submit" id="submitButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <div class="main-body">
+      <div class="location"></div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h1 class="box-heading">Weather</h1>
+          <h2 class="temperature-value">°C</h2>
+          <div class="weather-icon">
+            <img src="icons/unknown.png" alt="" />
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <h1 class="box-heading">Wind</h1>
+          <h2 class="wind-direction"></h2>
+          <h2 class="wind-speed"></h2>
+        </div>
+
+        <div class="grid-item">
+          <h1 class="box-heading">Sunrise/Sunset</h1>
+          <h2 class="sunrise"></h2>
+          <h2 class="sunset"></h2>
+        </div>
+
+        <div class="grid-item">
+          <h1 class="box-heading">Information</h1>
+          <h2 class="humidity-description"></h2>
+          <h2 class="cloud-percentage"></h2>
+          <h2 class="visability"></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
