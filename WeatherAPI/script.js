@@ -57,5 +57,7 @@ search.addEventListener("click", function () {
 
       icon.innerHTML = `<img src="icons/${tempIconElement}.png"/>`;
       time.textContent = new Date(seconds * 1000).toISOString().substr(11, 5);
+      sunrise.textContent = convertTime(data.sys.sunrise) + "am";
+      sunset.textContent = convertTime(data.sys.sunset) + "pm";
     });
 });
