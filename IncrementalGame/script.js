@@ -1,5 +1,5 @@
 var damageFromClicks = document.getElementById("clickDamage");
-var money = 1000000;
+var money = 10;
 var generators = [];
 var lastUpdate = Date.now();
 var numberOfButtons = 5;
