@@ -64,7 +64,7 @@
   background-color: #54888f;
   border: none;
   font-size: 26px;
-  color: white;
+  color: black;
 }
 .searchbar::placeholder {
   color: black;
