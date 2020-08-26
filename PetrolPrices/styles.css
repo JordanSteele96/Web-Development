@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(33, 0, 77);
+  background: linear-gradient(
+    87deg,
+    rgba(33, 0, 77, 0.8) 15%,
+    rgba(247, 107, 7, 0.8) 100%
+  );
+}
+canvas {
+  width: 58vw !important;
+  height: 58vh !important;
+}
+
+.page-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.graph-container {
+  background-color: white;
+
+  padding: 2%;
+}
