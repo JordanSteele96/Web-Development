@@ -7,8 +7,8 @@ body {
   background: rgb(33, 0, 77);
   background: linear-gradient(
     87deg,
-    rgba(33, 0, 77, 0.8) 15%,
-    rgba(247, 107, 7, 0.8) 100%
+    rgba(33, 0, 77, 0.7) 15%,
+    rgba(247, 107, 7, 0.7) 100%
   );
 }
 canvas {
@@ -20,13 +20,19 @@ canvas {
   display: flex;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
 
 .graph-container {
-  background-color: white;
-
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 34px;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
