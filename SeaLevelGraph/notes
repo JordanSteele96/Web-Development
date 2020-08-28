@@ -2,6 +2,8 @@ const weekArr = [];
 const WeeklyPrices = [];
 const monthlyPrices = [];
 const monthArr = [];
+
+const yearlyPrices = [];
 let myChart;
 
 async function createCharts() {
@@ -36,10 +38,10 @@ async function createCharts() {
 }
 
 async function getData() {
-  const response = await fetch("data/test.csv");
+  const response = await fetch("data/test2.csv");
   const data = await response.text();
 
-  const table = data.split("\n").slice(3);
+  const table = data.split("\n");
 
   table.forEach((elt) => {
     const columns = elt.split(",");
@@ -51,21 +53,22 @@ async function getData() {
 }
 
 //This function averages the prices for each month (monthlyPrices)
-async function addingUp() {
+async function monthsData() {
   await getData();
   let sum = 0;
   for (let counter = 1; counter <= WeeklyPrices.length; counter++) {
     sum += parseFloat(WeeklyPrices[counter - 1]);
 
     if (counter % 4 == 0 && !counter == 0) {
-      monthlyPrices.push(sum.toFixed(2) / 4);
+      monthlyPrices.push(sum.toFixed(3) / 4);
       sum = 0;
     }
   }
+  console.log(monthlyPrices.length);
 }
 
 // This function sets the X axis for monthly prices (monthArr)
-function arrMonths() {
+async function monthsXAxis() {
   var months = [
     "Jan",
     "Feb",
@@ -80,8 +83,8 @@ function arrMonths() {
     "Nov",
     "Dec",
   ];
-  var year = 0;
-  for (let i = 0; i < 224; i++) {
+  var year = 2003;
+  for (let i = 0; i < 280; i++) {
     if (i % 12 == 0) {
       year++;
     }
@@ -94,7 +97,6 @@ function changeDataToWeekly() {
   myChart.data.labels = weekArr;
   myChart.update();
 }
-
 function changeDataToMonthly() {
   myChart.data.datasets[0].data = monthlyPrices;
   myChart.data.labels = monthArr;
@@ -102,8 +104,8 @@ function changeDataToMonthly() {
 }
 
 async function setup() {
-  await addingUp();
+  await monthsData();
+  await monthsXAxis();
 }
-
-arrMonths();
+console.log(monthlyPrices);
 createCharts();

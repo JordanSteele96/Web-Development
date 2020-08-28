@@ -36,3 +36,14 @@ canvas {
   color: white;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
+.btn {
+  border: none;
+  background: #4e2367;
+  height: 50px;
+  width: 110px;
+  border-radius: 12px;
+  color: whitesmoke;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
