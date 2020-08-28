@@ -15,8 +15,8 @@ async function createCharts() {
         {
           label: "GMSL",
           data: monthlyDataGMSL,
-          backgroundColor: ["rgba(255, 99, 132, 0.2)"],
-          borderColor: ["rgba(255, 99, 132, 1)"],
+          backgroundColor: "rgba(112, 177, 255, 0.3)",
+          borderColor: "rgba(73, 163, 255, 1)",
           borderWidth: 1,
         },
       ],
