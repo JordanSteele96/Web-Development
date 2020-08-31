@@ -48,20 +48,30 @@ canvas {
   cursor: pointer;
   font-weight: 600;
 }
-
-.yearlysep-btn {
+.button-container {
+  display: flex;
+}
+.yearlysep {
   border: none;
   background: #055871;
   height: 50px;
   border-radius: 12px;
   color: whitesmoke;
   margin: 5px;
-  cursor: pointer;
   font-weight: 600;
+  width: 346px;
+  text-align: center;
+  margin: auto;
+  padding: 14px;
 }
-
+.search {
+  background: #015871;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
 #inputYear {
-  width: 40px;
+  width: 50px;
 }
 .ocean {
   height: 5%;
