@@ -1,8 +1,10 @@
 var dateMonthly = [];
 var monthlyDataGMSL = [];
-
 var dateYearly = [];
 var yearlyDataGMSL = [];
+var allMonths = {};
+let myChart;
+let userInput = document.getElementById("inputYear");
 
 async function createCharts() {
   await setup();
@@ -66,6 +68,21 @@ async function getYearlyData() {
   });
 }
 
+async function yearsSeperated() {
+  var eachYear = [];
+  var numberOfYears = 1879;
+  for (var months = 1; months <= monthlyDataGMSL.length; months++) {
+    //loop over data
+    eachYear.push(monthlyDataGMSL[months - 1]); //add element from data to array
+    if (months % 12 == 0) {
+      //if all 12 months have been added do something
+      numberOfYears++; //increment number of years
+      allMonths[numberOfYears] = eachYear; //add array to object
+      eachYear = []; //empty array
+    }
+  }
+}
+
 async function changeDataToMonthly() {
   myChart.data.datasets[0].data = monthlyDataGMSL;
   myChart.data.labels = dateMonthly;
@@ -78,8 +95,40 @@ async function changeDataToYearly() {
   myChart.update();
 }
 
+async function changeDataToYearlySeperated() {
+  myChart.data.labels = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  myChart.data.datasets[0].label = "Year:" + userInput.value;
+  myChart.data.datasets[0].data = allMonths[userInput.value];
+  myChart.update();
+}
+
+userInput.addEventListener("keyup", function (event) {
+  //searches
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("btn3").click();
+  }
+});
+
 async function setup() {
   await getYearlyData();
   await getMonthlyData();
+  await yearsSeperated();
 }
+console.log(allMonths);
+yearsSeperated();
+
 createCharts();

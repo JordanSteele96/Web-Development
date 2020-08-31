@@ -49,6 +49,20 @@ canvas {
   font-weight: 600;
 }
 
+.yearlysep-btn {
+  border: none;
+  background: #055871;
+  height: 50px;
+  border-radius: 12px;
+  color: whitesmoke;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#inputYear {
+  width: 40px;
+}
 .ocean {
   height: 5%;
   width: 100%;
