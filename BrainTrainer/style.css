@@ -4,10 +4,6 @@
 }
 
 .page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   height: 100vh;
   width: 100vw;
   background: linear-gradient(
@@ -23,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .box-container {
   display: grid;
@@ -33,7 +30,7 @@
 }
 
 .box {
-  background-color: #444;
+  background-color: darkslategrey;
   color: #fff;
   border-radius: 5px;
   font-size: 150%;
@@ -43,23 +40,25 @@
   align-items: center;
 }
 
-
-
-
-.btn {
+button {
   background-color: #001662;
   color: white;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 100px;
   height: 40px;
   border-radius: 5px;
 }
 
+.btn {
+  margin-top: 15px;
+  width: 150px;
+}
+
 .identifyColor {
   width: 50px;
   height: 50px;
-  background-color: #444;
+  background-color: darkslategrey;
   margin-left: 10px;
   border-radius: 5px;
 }
@@ -67,5 +66,5 @@
 .colorPicker {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }

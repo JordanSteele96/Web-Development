@@ -6,16 +6,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
     <div class="page-container">
       <div class="middle">
-        <button class="btn" onclick="startGame()" id="startBtn">Start!</button>
+        <button onclick="startGame()" id="startBtn">Start!</button>
 
         <div class="colorPicker">
           <h2>Pick Color:</h2>
           <div class="identifyColor" id="idColor"></div>
         </div>
         <div class="box-container" id="boxContainer"></div>
+        <button class="btn" onclick="submit()" id="submitBtn">Submit</button>
+        <h2 class="userScore">Score:</h2>
       </div>
     </div>
 
