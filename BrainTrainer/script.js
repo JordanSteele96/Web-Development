@@ -7,15 +7,13 @@ let numberOfSquares = 9;
 let userGuessArray = [];
 let usersScore = 0;
 
-
-
 function createGridItems() {
   //creates the grid
   for (let i = 0; i < numberOfSquares; i++) {
     let div = document.createElement("div");
     div.classList.add("box");
     div.id = "box" + i;
-    div.onclick = function changeColor() { };
+    div.onclick = function changeColor() {};
     boxContainer.appendChild(div);
   }
 }
@@ -51,7 +49,6 @@ document.querySelectorAll(".box").forEach((item) => {
 });
 
 function startGame() {
-
   // starts the game 1.makes array -> disables start btn-> loops over colorsArray and colors the tiles
   randomColor();
   document.getElementById("startBtn").disabled = true;
@@ -64,34 +61,38 @@ function startGame() {
 }
 
 function createUsersArray() {
+  let offset = 1; // With no offset the user can just click submit and win
   for (let i = 0; i < numberOfSquares; i++) {
-    if (document.getElementById("box" + i).style.backgroundColor == "darkslategrey") {
-      userGuessArray.push(colorArray[i])
+    if (
+      document.getElementById("box" + i).style.backgroundColor !==
+      "darkslategrey"
+    ) {
+      userGuessArray.push(
+        document.getElementById("box" + i).style.backgroundColor
+      );
+      offset = 0;
     } else {
-      userGuessArray.push(document.getElementById("box" + i).style.backgroundColor);
+      userGuessArray.push(colorArray[i + offset]);
     }
   }
-
 }
 
 function compareArray() {
   if (JSON.stringify(userGuessArray) === JSON.stringify(colorArray)) {
-    usersScore++
+    usersScore++;
     score.innerHTML = "Score:" + usersScore;
   } else {
     usersScore = 0;
-    console.log("gameover")
-
+    score.innerHTML = "Score: " + usersScore;
+    console.log("gameover");
   }
 }
 
+function minusPoints() {}
 function submit() {
   document.getElementById("idColor").style.backgroundColor = "darkslategrey";
   document.getElementById("submitBtn").disabled = true;
-  createUsersArray()
+  createUsersArray();
   compareArray();
   startGame();
 }
-
-
-
