@@ -71,35 +71,22 @@ function createUsersArray() {
   }
 }
 
-
 function compareArray() {
-  let tempScore = 0;
-  let numberOfSameColor = 0;
-  for (let i = 0; i < colorArray.length; i++) {
-    if (colorArray[i] === colorToPick) { // how many colorToPick in colorArray
-      numberOfSameColor++;
-    }
-    if (userGuessArray[i] === colorToPick && colorArray[i] === colorToPick) { // How many same colors 
-      tempScore++;
-    }
-  }
-  if (tempScore === numberOfSameColor) { // if they are equal then the user got the right answer
-    console.log("You Got the right answer")
-    //What to do if the user got the right answer
+  if (JSON.stringify(userGuessArray) === JSON.stringify(colorArray)) {
     usersScore++;
     score.innerHTML = "Score:" + usersScore;
   } else {
     usersScore = 0;
     score.innerHTML = "Score: " + usersScore;
-    //What to do if the user got the wrong answer
-    console.log("Wrong")
+    console.log("gameover");
   }
 }
+
 
 function submit() {
   document.getElementById("idColor").style.backgroundColor = "darkslategrey";
   document.getElementById("submitBtn").disabled = true;
   createUsersArray();
   compareArray();
-  startGame();
+  // startGame();
 }
