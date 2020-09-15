@@ -6,7 +6,7 @@ let colorToPick; // this is the color the user must guess within the grid
 let numberOfSquares = 9;
 let userGuessArray = [];
 let usersScore = 0;
-
+document.getElementById("submitBtn").disabled = true;
 function createGridItems() {
   //creates the grid
   for (let i = 0; i < numberOfSquares; i++) {
@@ -29,11 +29,11 @@ function randomColor() {
 
 function hideColors() {
   // This hides the colors and picks a color the the user to use
-
   for (let i = 0; i < numberOfSquares; i++) {
     document.getElementById("box" + i).style.backgroundColor = "darkslategrey";
     colorToPick = colorArray[Math.floor(Math.random() * numberOfSquares)];
     document.getElementById("idColor").style.backgroundColor = colorToPick;
+    document.getElementById("submitBtn").disabled = false;
   }
 }
 
@@ -49,12 +49,13 @@ document.querySelectorAll(".box").forEach((item) => {
 });
 
 function startGame() {
+
   colorArray = [];
   userGuessArray = [];
   // starts the game 1.makes array -> disables start btn-> loops over colorsArray and colors the tiles
   randomColor();
   document.getElementById("startBtn").disabled = true;
-  document.getElementById("submitBtn").disabled = false;
+  document.getElementById("submitBtn").disabled = true;
   for (let i = 0; i < numberOfSquares; i++) {
     document.getElementById("box" + i).style.backgroundColor = colorArray[i];
   }
@@ -73,7 +74,8 @@ function createUsersArray() {
   }
 }
 
-tempScore = 0;
+
+
 function compareArray() {
   let tempScore = 0;
   let numberOfSameColor = 0;
@@ -83,10 +85,10 @@ function compareArray() {
     }
     if (userGuessArray[i] === colorToPick && colorArray[i] === colorToPick) { // How many same colors 
       tempScore++;
+
     }
   }
   if (tempScore === numberOfSameColor) { // if they are equal then the user got the right answer
-    console.log("You Got the right answer")
     //What to do if the user got the right answer
     usersScore++;
     score.innerHTML = "Score:" + usersScore;
@@ -94,14 +96,13 @@ function compareArray() {
     usersScore = 0;
     score.innerHTML = "Score: " + usersScore;
     //What to do if the user got the wrong answer
-    console.log("Wrong")
+
   }
 
 }
 
 function submit() {
   document.getElementById("idColor").style.backgroundColor = "darkslategrey";
-  document.getElementById("submitBtn").disabled = true;
   createUsersArray();
   compareArray();
   startGame();
