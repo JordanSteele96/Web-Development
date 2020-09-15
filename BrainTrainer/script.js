@@ -20,10 +20,10 @@ function createGridItems() {
 createGridItems();
 
 function randomColor() {
-  colorArray = [];
+
   //takes color from "colors" and puts them into new array
   for (let i = 0; i < numberOfSquares; i++) {
-    colorArray.push(colors[Math.floor(Math.random() * 5)]);
+    colorArray.push(colors[Math.floor(Math.random() * colors.length)]);
   }
 }
 
@@ -49,6 +49,8 @@ document.querySelectorAll(".box").forEach((item) => {
 });
 
 function startGame() {
+  colorArray = [];
+  userGuessArray = [];
   // starts the game 1.makes array -> disables start btn-> loops over colorsArray and colors the tiles
   randomColor();
   document.getElementById("startBtn").disabled = true;
@@ -57,7 +59,7 @@ function startGame() {
     document.getElementById("box" + i).style.backgroundColor = colorArray[i];
   }
   //userGuessArray = [];
-  setTimeout(hideColors, 2000);
+  setTimeout(hideColors, 4000);
 }
 
 function createUsersArray() {
@@ -71,7 +73,7 @@ function createUsersArray() {
   }
 }
 
-
+tempScore = 0;
 function compareArray() {
   let tempScore = 0;
   let numberOfSameColor = 0;
@@ -94,6 +96,7 @@ function compareArray() {
     //What to do if the user got the wrong answer
     console.log("Wrong")
   }
+
 }
 
 function submit() {
