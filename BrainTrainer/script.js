@@ -76,6 +76,9 @@ function createUsersArray() {
 
 
 
+
+
+
 function compareArray() {
   let tempScore = 0;
   let numberOfSameColor = 0;
@@ -90,13 +93,21 @@ function compareArray() {
   }
   if (tempScore === numberOfSameColor) { // if they are equal then the user got the right answer
     //What to do if the user got the right answer
+    score.style.color = "green"
     usersScore++;
     score.innerHTML = "Score:" + usersScore;
+    setInterval(function () { // Changed the color of the 
+      score.style.color = "black"
+    }, 2500);
+
   } else {
+    score.style.color = "red"
     usersScore = 0;
     score.innerHTML = "Score: " + usersScore;
     //What to do if the user got the wrong answer
-
+    setInterval(function () {
+      score.style.color = "black"
+    }, 2500);
   }
 
 }
