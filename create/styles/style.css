@@ -89,7 +89,17 @@ header .logo {
   font-size: 35px;
 }
 
-header nav {
+header .bottom-nav-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .bottom-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,26 +113,26 @@ header nav {
   height: 100px;
 }
 
-header nav .nav-links li {
+header .bottom-nav .nav-links li {
   list-style-type: none;
   display: inline-block;
 }
 
-header nav .nav-links a {
+header .bottom-nav .nav-links a {
   text-decoration: none;
   padding: 20px;
   color: black;
 }
 
-header nav .nav-links .rightMostLink {
+header .bottom-nav .nav-links .rightMostLink {
   padding-right: 0px;
 }
 
-header nav .nav-links .active {
+header .bottom-nav .nav-links .active {
   color: #32dbc6;
 }
 
-header nav .nav-links a:hover {
+header .bottom-nav .nav-links a:hover {
   color: #32dbc6;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -187,7 +197,18 @@ header nav .nav-links a:hover {
 }
 
 .innovate-container {
-  height: 50px;
+  height: 50vh;
   width: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 /*# sourceMappingURL=style.css.map */

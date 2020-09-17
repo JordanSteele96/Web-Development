@@ -55,11 +55,17 @@ header {
   justify-content: center;
   width: 100%;
   background-color: white;
+
   .logo {
     font-weight: 500;
     font-size: 35px;
   }
-  nav {
+  .bottom-nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,6 +140,17 @@ header {
 }
 
 .innovate-container {
-  height: 50px;
+  height: 50vh;
   width: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
