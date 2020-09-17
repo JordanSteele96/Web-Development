@@ -1,0 +1,193 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+i {
+  color: #32dbc6;
+}
+
+span {
+  color: #32dbc6;
+}
+
+.top-bar-container {
+  height: 43px;
+  width: 100%;
+  background-color: #343a40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-bar-container .top-bar {
+  width: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-bar-container .top-bar li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.top-bar-container .top-bar a {
+  text-decoration: none;
+  padding-right: 13px;
+  color: white;
+  font-weight: 600;
+}
+
+.top-bar-container .top-bar .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+header .logo {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 58%;
+  height: 100px;
+}
+
+header nav .nav-links li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+header nav .nav-links a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+header nav .nav-links .rightMostLink {
+  padding-right: 0px;
+}
+
+header nav .nav-links .active {
+  color: #32dbc6;
+}
+
+header nav .nav-links a:hover {
+  color: #32dbc6;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.banner {
+  height: 90vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/create/images/hero_1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/create/images/hero_1.jpg");
+  background-position: 50% 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner .banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-text h1 {
+  font-weight: 400;
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+
+.banner .banner-text h2 {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.banner .banner-text .button-container {
+  margin-top: 50px;
+}
+
+.banner .banner-text .button-container button {
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 150px;
+  background-color: #32dbc6;
+  font-weight: 400;
+}
+
+.innovate-container {
+  height: 50px;
+  width: 50px;
+}
+/*# sourceMappingURL=style.css.map */

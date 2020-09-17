@@ -59,7 +59,7 @@ function startGame() {
     document.getElementById("box" + i).style.backgroundColor = colorArray[i];
   }
   //userGuessArray = [];
-  setTimeout(hideColors, 4000);
+  setTimeout(hideColors, 5000);
 }
 
 function createUsersArray() {
