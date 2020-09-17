@@ -97,6 +97,17 @@ header .bottom-nav-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100px;
+}
+
+header .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .bottom-nav {
@@ -156,7 +167,6 @@ header .bottom-nav .nav-links a:hover {
   color: white;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .banner .banner-text {
@@ -197,18 +207,14 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .innovate-container {
-  height: 50vh;
+  height: 1000px;
   width: 50px;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: white;
-}
-
-.sticky + .content {
-  padding-top: 102px;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

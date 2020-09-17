@@ -64,7 +64,14 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 100px;
   }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .bottom-nav {
     display: flex;
     align-items: center;
@@ -109,7 +116,6 @@ header {
   color: white;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 
   .banner-text {
     display: flex;
@@ -140,17 +146,13 @@ header {
 }
 
 .innovate-container {
-  height: 50vh;
+  height: 1000px;
   width: 50px;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: white;
-}
-
-.sticky + .content {
-  padding-top: 102px;
+  width: 50%;
 }
