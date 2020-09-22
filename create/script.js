@@ -1,5 +1,6 @@
 window.onscroll = function () {
   myFunction();
+  scrollFunction();
 };
 
 var header = document.getElementById("navbar");
@@ -10,6 +11,19 @@ function myFunction() {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
+  }
+}
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    document.getElementById("bottom-nav-container").style.height = "70px";
+    document.getElementById("bottom-nav").style.height = "70px";
+  } else {
+    document.getElementById("bottom-nav-container").style.height = "100px";
+    document.getElementById("bottom-nav").style.height = "100px";
   }
 }
 

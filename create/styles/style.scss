@@ -65,6 +65,7 @@ header {
     display: flex;
     justify-content: center;
     height: 100px;
+    transition: 0.4s;
   }
   .wrapper {
     width: 100%;
@@ -80,6 +81,7 @@ header {
     justify-content: space-between;
     width: $topNavWidth;
     height: 100px;
+    transition: 0.4s;
 
     .burger div {
       width: 25px;
@@ -156,11 +158,6 @@ header {
   }
 }
 
-.innovate-container {
-  height: 1000px;
-  width: 50px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -225,4 +222,51 @@ header {
 }
 .nav-active {
   transform: translateX(0%);
+}
+
+.innovate-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 55vh;
+  width: 100%;
+  .inner-innovate-container {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 70%;
+    .innovate-box {
+      height: 400px;
+      width: 350px;
+      margin: 10px;
+      position: relative;
+      h2 {
+        color: $mainColor;
+        font-weight: 500;
+        padding: 20px 20px 0px 20px;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px 20px 20px 20px;
+        line-height: 1.6;
+        color: #4d4d4d;
+      }
+      .list {
+        padding: 5px 20px 5px 20px;
+      }
+
+      .checkmark {
+        padding-right: 15px;
+      }
+      .overlap {
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        left: -40px;
+        color: #f0f0f0;
+        font-size: 110px;
+      }
+    }
+  }
 }
