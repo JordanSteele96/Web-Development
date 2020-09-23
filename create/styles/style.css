@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Quicksand", sans-serif;
 }
 
 i {
@@ -456,11 +456,13 @@ header .bottom-nav .nav-links a:hover {
 .image-text h1 {
   font-size: 26px;
   font-weight: 500;
+  font-family: sans-serif;
+  margin-bottom: 5px;
 }
 
 .image-text h2 {
-  font-size: 12px;
-  font-weight: 100;
+  font-size: 13px;
+  font-weight: 200;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -493,5 +495,90 @@ header .bottom-nav .nav-links a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   opacity: 0.2;
+}
+
+.black-box-container {
+  height: 70vh;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.black-box-container .blackbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  width: 1150px;
+  background-color: black;
+}
+
+.black-box-container .blackbox .blackbox-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 47%;
+  height: 100%;
+}
+
+.black-box-container .blackbox .blackbox-left img {
+  height: 450px;
+  width: 450px;
+}
+
+.black-box-container .blackbox .blackbox-right {
+  width: 53%;
+  padding-left: 70px;
+  padding-top: 65px;
+}
+
+.black-box-container .blackbox .blackbox-right h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.black-box-container .blackbox .blackbox-right h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+.black-box-container .blackbox .blackbox-right a {
+  color: white;
+  font-size: 18px;
+}
+
+.black-box-container .blackbox .blackbox-right .griditem {
+  padding-right: 16px;
+}
+
+.black-box-container .blackbox .blackbox-right .blackbox-icon {
+  padding-right: 10px;
+  color: #fff;
+}
+
+.black-box-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 50px 1px;
+      grid-template-areas: "strategy art-direction" "web-development copyright";
 }
 /*# sourceMappingURL=style.css.map */
