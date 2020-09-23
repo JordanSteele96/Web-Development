@@ -66,6 +66,7 @@ header {
     justify-content: center;
     height: 100px;
     transition: 0.4s;
+    z-index: 2;
   }
   .wrapper {
     width: 100%;
@@ -249,11 +250,11 @@ header {
         font-size: 16px;
         font-weight: 400;
         padding: 15px 20px 20px 20px;
-        line-height: 1.6;
+        line-height: 1.7;
         color: #4d4d4d;
       }
       .list {
-        padding: 5px 20px 5px 20px;
+        padding: 7px 23px 7px 20px;
       }
 
       .checkmark {
@@ -269,4 +270,102 @@ header {
       }
     }
   }
+}
+.ourworks-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .ourworks-title {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    width: 37%;
+    h1 {
+      font-weight: 500;
+      font-size: 48px;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+}
+.ourworks-grid-container {
+  width: 100%;
+}
+.ourworks-grid {
+  position: relative;
+  margin-left: 15px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5% 1.5%;
+  grid-template-areas:
+    "ourworks-img1 ourworks-img2 ourworks-img3"
+    "ourworks-img4 ourworks-img5 ourworks-img6";
+  img {
+    width: 100%;
+  }
+}
+
+.ourworks-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background-color: black;
+  img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  h1 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+.ourworks-text-hover {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+
+  /* position the text centrally*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.ourworks-box:hover .ourworks-text-hover {
+  opacity: 1;
+}
+.ourworks-box:hover img {
+  transform: scale(1.05);
+  opacity: 0.2;
 }
