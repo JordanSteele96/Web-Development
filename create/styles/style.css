@@ -219,7 +219,9 @@ header .bottom-nav .nav-links a:hover {
   height: 50px;
   width: 150px;
   background-color: #32dbc6;
-  font-weight: 400;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #212529;
 }
 
 .sticky {
@@ -414,6 +416,7 @@ header .bottom-nav .nav-links a:hover {
 
 .ourworks-grid img {
   width: 100%;
+  height: auto;
 }
 
 .ourworks-box {
@@ -584,6 +587,7 @@ header .bottom-nav .nav-links a:hover {
 
 .testimonials-container {
   height: 50vh;
+  margin-bottom: 85px;
 }
 
 .testimonials-container h1 {
@@ -664,5 +668,85 @@ header .bottom-nav .nav-links a:hover {
   height: 50px;
   border-radius: 50px;
   margin-right: 15px;
+}
+
+.our-services-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.our-services-container h1 {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.our-services-container .our-services-grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid {
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 37% 37% 37%;
+      grid-template-columns: 37% 37% 37%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 70px 5px;
+      grid-template-areas: "web-design ecommerce web-applications" "branding copy-writing mobile-applications";
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-inner-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.4fr 1.5fr;
+      grid-template-columns: 0.4fr 1.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1px 1px;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item {
+  margin-right: 70px;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item h1 {
+  font-size: 24px;
+  color: #737373;
+  font-weight: 500;
+  text-align: left;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item h2 {
+  font-size: 16px;
+  color: #737373;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item h3 {
+  font-size: 16px;
+  color: #32dbc6;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item .our-services-icon {
+  font-size: 50px;
+}
+
+.our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item .our-services-icon-bigger {
+  font-size: 75px;
 }
 /*# sourceMappingURL=style.css.map */
