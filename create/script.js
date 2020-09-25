@@ -3,7 +3,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-var header = document.getElementById("navbar");
+var header = document.getElementById("navbar"); // makes nav bar stick to the top of the page
 var sticky = header.offsetTop;
 
 function myFunction() {
@@ -15,6 +15,7 @@ function myFunction() {
 }
 
 function scrollFunction() {
+  // changes size of nav bar on scroll
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
@@ -32,12 +33,14 @@ const nav = document.querySelector(".nav-links");
 const closebtn = document.querySelector("#close");
 
 const navSlide = () => {
+  // opens burger menu
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
   });
 };
 
 const navSlide2 = () => {
+  // closes burger menu
   closebtn.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
   });
@@ -46,7 +49,7 @@ const navSlide2 = () => {
 navSlide();
 navSlide2();
 
-let resizeTimer;
+let resizeTimer; // stops the burger menu bar playing when resizing the page
 window.addEventListener("resize", () => {
   document.body.classList.add("resize-animation-stopper");
   clearTimeout(resizeTimer);

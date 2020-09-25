@@ -312,7 +312,7 @@ header .bottom-nav .nav-links a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
-  height: 55vh;
+  height: 500px;
   width: 100%;
 }
 
@@ -501,7 +501,7 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .black-box-container {
-  height: 65vh;
+  height: 600px;
   margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,7 +586,7 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .testimonials-container {
-  height: 50vh;
+  height: 500px;
   margin-bottom: 85px;
 }
 
@@ -672,7 +672,7 @@ header .bottom-nav .nav-links a:hover {
 
 .our-services-container {
   width: 100%;
-  height: 75vh;
+  height: 700px;
 }
 
 .our-services-container h1 {
@@ -751,7 +751,7 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .about-us-container {
-  height: 60vh;
+  height: 800px;
   width: 100%;
   border-top: 1px solid #e8e8e8;
   display: -webkit-box;
@@ -760,6 +760,7 @@ header .bottom-nav .nav-links a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 80px;
 }
 
 .about-us-container .inner-about-us-container {
@@ -834,5 +835,95 @@ header .bottom-nav .nav-links a:hover {
   height: 450px;
   width: 450px;
   border-radius: 5px;
+}
+
+.our-team-container {
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-team-container h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.our-team-container .inner-our-team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+
+.our-team-container .inner-our-team-container .our-team-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.our-team-container .inner-our-team-container .our-team-people img {
+  border-radius: 100%;
+  height: 190px;
+  width: 190px;
+}
+
+.our-team-container .inner-our-team-container .our-team-people h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #737373;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.our-team-container .inner-our-team-container .our-team-people h3 {
+  margin-bottom: 20px;
+  color: #bfbfbf;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.our-team-container .inner-our-team-container .our-team-people a {
+  line-height: 1.7;
+  color: #7a7a7a;
+}
+
+.our-team-container .inner-our-team-container .our-team-people .our-people-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-team-container .inner-our-team-container .our-team-people .our-people-icons .icon-our-people {
+  color: #737373;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 7px;
+  margin-left: 7px;
 }
 /*# sourceMappingURL=style.css.map */
