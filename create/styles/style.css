@@ -931,7 +931,7 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .blog-container {
-  height: 900px;
+  height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,5 +1035,160 @@ header .bottom-nav .nav-links a:hover {
   -webkit-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
   cursor: pointer;
+}
+
+.contact-us-container {
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8f9fa;
+}
+
+.contact-us-container h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+  font-weight: 500;
+  margin-top: 70px;
+}
+
+.contact-us-container .contact-us-inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  height: 100%;
+}
+
+.contact-us-container .contact-us-inner-container-left {
+  height: 100%;
+  width: 55%;
+  background-color: #fff;
+  padding: 50px 50px 50px 50px;
+}
+
+.contact-us-container .contact-us-inner-container-left h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 20% 20% 20% 40% 20%;
+      grid-template-rows: 20% 20% 20% 40% 20%;
+      grid-template-areas: "first-name last-name" "email email" "subject subject" "message message" "contact-button contact-button";
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container label {
+  margin-bottom: 120px;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container input {
+  border-radius: 20px;
+  height: 45px;
+  border: 1px solid #b6b6b6;
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container textarea {
+  border-radius: 20px;
+  height: 45px;
+  border: 1px solid #b6b6b6;
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container .input-small {
+  width: 100%;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container .input-medium {
+  width: 200%;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container .input-large {
+  width: 200%;
+  height: 200px;
+  resize: none;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container .first-name {
+  margin-right: 15px;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container .last-name {
+  margin-left: 15px;
+}
+
+.contact-us-container .contact-us-inner-container-left .contact-grid-container .contact-button button {
+  margin-top: 30px;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 150px;
+  background-color: #32dbc6;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 12px;
+}
+
+.contact-us-container .contact-us-inner-container-right {
+  height: 40%;
+  width: 42%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+
+.contact-us-container .contact-us-inner-container-right .contact-right {
+  margin-bottom: 40px;
+}
+
+.contact-us-container .contact-us-inner-container-right .contact-right h1 {
+  text-align: left;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.contact-us-container .contact-us-inner-container-right .contact-right h2 {
+  font-size: 16px;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.contact-us-container .contact-us-inner-container-right .contact-right span {
+  color: #32dbc6;
 }
 /*# sourceMappingURL=style.css.map */
