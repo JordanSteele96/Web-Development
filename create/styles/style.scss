@@ -833,6 +833,11 @@ header {
         font-size: 16px;
         font-weight: 400;
         color: $fontColor;
+        transition: 0.15s ease-in;
+        &:focus {
+          outline: none;
+          border: 1px solid $mainColor;
+        }
       }
       textarea {
         border-radius: 20px;
@@ -843,6 +848,11 @@ header {
         font-size: 16px;
         font-weight: 400;
         color: $fontColor;
+        transition: 0.15s ease-in;
+        &:focus {
+          outline: none;
+          border: 1px solid $mainColor;
+        }
       }
       .input-small {
         width: 100%;
