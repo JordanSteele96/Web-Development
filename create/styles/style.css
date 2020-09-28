@@ -642,7 +642,7 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .testimonials-container .carousel .carousel-cell .inner-cell {
-  width: 40%;
+  width: 600px;
 }
 
 .testimonials-container .carousel .carousel-cell .inner-cell h2 {
@@ -702,14 +702,14 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .our-services-container .our-services-grid-container .our-services-grid {
-  width: 60%;
+  width: 1000px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35% 35% 35%;
-      grid-template-columns: 35% 35% 35%;
+  -ms-grid-columns: 37% 37% 37%;
+      grid-template-columns: 37% 37% 37%;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  gap: 70px 5px;
+  gap: 70px 15px;
       grid-template-areas: "web-design ecommerce web-applications" "branding copy-writing mobile-applications";
 }
 
@@ -1380,6 +1380,10 @@ header .bottom-nav .nav-links a:hover {
   .innovate-container .inner-innovate-container .innovate-box {
     width: 275px;
   }
+  .our-services-container .our-services-grid-container .our-services-grid {
+    -ms-grid-columns: 35% 35% 35%;
+        grid-template-columns: 35% 35% 35%;
+  }
 }
 
 @media screen and (max-width: 1036px) {
@@ -1526,6 +1530,29 @@ header .bottom-nav .nav-links a:hover {
     gap: 21px 11px;
         grid-template-areas: "strategy" "art-direction" "web-development" "copyright";
   }
+  .our-services-container {
+    width: 100%;
+    height: auto;
+  }
+  .our-services-container .our-services-grid-container {
+    margin-left: 20px;
+  }
+  .our-services-container .our-services-grid-container .our-services-grid {
+    width: 1050px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 70px 55px;
+        grid-template-areas: "web-design ecommerce" "web-applications  branding" "copy-writing mobile-applications";
+  }
+  .our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item {
+    margin-right: 0px;
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 753px) {
@@ -1619,9 +1646,31 @@ header .bottom-nav .nav-links a:hover {
     width: 100%;
     height: auto;
   }
+  .our-services-container {
+    height: 1374px;
+    margin-bottom: 20px;
+  }
+  .our-services-container .our-services-grid-container .our-services-grid {
+    -ms-grid-columns: 77%;
+        grid-template-columns: 77%;
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: "web-design" "ecommerce" "web-applications" "branding" "copy-writing" "mobile-applications";
+  }
+  .our-services-container .our-services-grid-container .our-services-grid .our-services-inner-grid {
+    -ms-grid-columns: 0.4fr 2.5fr;
+        grid-template-columns: 0.4fr 2.5fr;
+  }
+  .our-services-container .our-services-grid-container .our-services-grid .our-services-grid-item {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 1201px) {
+  .black-box-container {
+    margin-bottom: 100px;
+  }
   .black-box-container .blackbox {
     width: 990px;
   }

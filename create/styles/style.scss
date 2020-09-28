@@ -478,7 +478,7 @@ header {
       margin-right: 10px;
       border-radius: 5px;
       .inner-cell {
-        width: 40%;
+        width: 600px;
         h2 {
           font-style: italic;
           font-weight: 400;
@@ -522,11 +522,11 @@ header {
     margin-top: 50px;
 
     .our-services-grid {
-      width: 60%;
+      width: 1000px;
       display: grid;
-      grid-template-columns: 35% 35% 35%;
+      grid-template-columns: 37% 37% 37%;
       grid-template-rows: 1fr 1fr;
-      gap: 70px 5px;
+      gap: 70px 15px;
       grid-template-areas:
         "web-design ecommerce web-applications"
         "branding copy-writing mobile-applications";
@@ -1054,6 +1054,13 @@ header {
       }
     }
   }
+  .our-services-container {
+    .our-services-grid-container {
+      .our-services-grid {
+        grid-template-columns: 35% 35% 35%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1036px) {
@@ -1181,6 +1188,30 @@ header {
       "web-development"
       "copyright";
   }
+
+  .our-services-container {
+    width: 100%;
+    height: auto;
+    .our-services-grid-container {
+      margin-left: 20px;
+      .our-services-grid {
+        width: 1050px;
+        justify-content: center;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 70px 55px;
+        grid-template-areas:
+          "web-design ecommerce"
+          "web-applications  branding"
+          "copy-writing mobile-applications";
+
+        .our-services-grid-item {
+          margin-right: 0px;
+          width: 300px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 753px) {
   .innovate-container {
@@ -1269,10 +1300,39 @@ header {
       height: auto;
     }
   }
-}
 
+  .our-services-container {
+    height: 1374px; //changed
+    margin-bottom: 20px;
+
+    .our-services-grid-container {
+      .our-services-grid {
+        grid-template-columns: 77%; //changed
+        grid-template-rows: repeat(6 1fr); //changed
+        grid-template-areas: //changed
+
+          "web-design"
+          "ecommerce"
+          "web-applications"
+          "branding"
+          "copy-writing"
+          "mobile-applications";
+
+        .our-services-inner-grid {
+          grid-template-columns: 0.4fr 2.5fr; //changed
+        }
+
+        .our-services-grid-item {
+          width: 100%;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1201px) {
   .black-box-container {
+    margin-bottom: 100px;
     .blackbox {
       width: 990px;
       .blackbox-left {
