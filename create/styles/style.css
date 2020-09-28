@@ -1462,6 +1462,70 @@ header .bottom-nav .nav-links a:hover {
     width: 100%;
     height: auto;
   }
+  .black-box-container {
+    height: auto;
+    margin-top: 150px;
+    width: 100%;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1275px;
+    width: 720px;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox .blackbox-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox .blackbox-left img {
+    height: 660px;
+    width: 660px;
+    margin-top: 20px;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox .blackbox-right {
+    width: 100%;
+    height: auto;
+    padding-left: 0px;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 30px 20px 30px;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox .blackbox-right h1 {
+    padding-bottom: 0px;
+    margin-top: 10px;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox .blackbox-right h2 {
+    padding-bottom: 10px;
+  }
+  .black-box-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr;
+        grid-template-columns: 3fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 21px 11px;
+        grid-template-areas: "strategy" "art-direction" "web-development" "copyright";
+  }
 }
 
 @media screen and (max-width: 753px) {
@@ -1495,6 +1559,19 @@ header .bottom-nav .nav-links a:hover {
     height: auto;
     margin-right: 5px;
     margin-bottom: 20px;
+  }
+  .black-box-container {
+    height: auto;
+    margin-top: 150px;
+    width: 100%;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox {
+    height: 1070px;
+    width: 500px;
+  }
+  .black-box-container .black-box-container-wrapper .blackbox .blackbox-left img {
+    height: 450px;
+    width: 450px;
   }
   .ourworks-container {
     width: 100%;
@@ -1541,6 +1618,20 @@ header .bottom-nav .nav-links a:hover {
   .ourworks-grid img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .black-box-container .blackbox {
+    width: 990px;
+  }
+  .black-box-container .blackbox .blackbox-left img {
+    height: 360px;
+    width: 360px;
+  }
+  .black-box-container .blackbox .blackbox-right {
+    width: 53%;
+    padding: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
