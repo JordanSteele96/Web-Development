@@ -389,7 +389,7 @@ header .bottom-nav .nav-links a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 37%;
+  width: 700px;
 }
 
 .ourworks-container .ourworks-title h1 {
@@ -404,6 +404,7 @@ header .bottom-nav .nav-links a:hover {
 
 .ourworks-grid-container {
   width: 100%;
+  height: auto;
 }
 
 .ourworks-grid {
@@ -412,11 +413,11 @@ header .bottom-nav .nav-links a:hover {
   margin-top: 70px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 32% 32% 32%;
-      grid-template-columns: 32% 32% 32%;
+  -ms-grid-columns: 31.7% 31.7% 31.7%;
+      grid-template-columns: 31.7% 31.7% 31.7%;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  gap: 1.5% 1.5%;
+  gap: 3% 2%;
       grid-template-areas: "ourworks-img1 ourworks-img2 ourworks-img3" "ourworks-img4 ourworks-img5 ourworks-img6";
 }
 
@@ -1373,6 +1374,9 @@ header .bottom-nav .nav-links a:hover {
 }
 
 @media screen and (max-width: 1250px) {
+  .innovate-container .inner-innovate-container {
+    height: 800px;
+  }
   .innovate-container .inner-innovate-container .innovate-box {
     width: 275px;
   }
@@ -1380,7 +1384,7 @@ header .bottom-nav .nav-links a:hover {
 
 @media screen and (max-width: 1036px) {
   .innovate-container {
-    height: auto;
+    height: 1000px;
     width: 100%;
   }
   .innovate-container .inner-innovate-container {
@@ -1412,6 +1416,52 @@ header .bottom-nav .nav-links a:hover {
   .innovate-container .inner-innovate-container .inner-innovate-container-wrapper .innovate-box .innovate-three {
     margin-top: 0px;
   }
+  .ourworks-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ourworks-container .ourworks-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 450px;
+  }
+  .ourworks-container .ourworks-title h1 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+  .ourworks-container .ourworks-title h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+  .ourworks-grid {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 70px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 47.7% 47.7%;
+        grid-template-columns: 47.7% 47.7%;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 2% 3%;
+        grid-template-areas: "ourworks-img1 ourworks-img2" "ourworks-img3 ourworks-img4" "ourworks-img5 ourworks-img6";
+  }
+  .ourworks-grid img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 753px) {
@@ -1427,6 +1477,7 @@ header .bottom-nav .nav-links a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0px;
+    height: 1150px;
     margin-left: 10%;
   }
   .innovate-container .inner-innovate-container .inner-innovate-container-wrapper {
@@ -1444,6 +1495,52 @@ header .bottom-nav .nav-links a:hover {
     height: auto;
     margin-right: 5px;
     margin-bottom: 20px;
+  }
+  .ourworks-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ourworks-container .ourworks-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 575px;
+  }
+  .ourworks-container .ourworks-title h1 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+  .ourworks-container .ourworks-title h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+  .ourworks-grid {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 70px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5%;
+        grid-template-areas: "ourworks-img1" "ourworks-img2" "ourworks-img3" "ourworks-img4" "ourworks-img5" "ourworks-img6";
+  }
+  .ourworks-grid img {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
