@@ -178,7 +178,7 @@ header {
   transition: none !important;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   body {
     overflow-x: hidden;
   }
@@ -236,11 +236,14 @@ header {
     display: flex;
     justify-content: center;
     height: 50%;
-    width: 70%;
+    .inner-innovate-container-wrapper {
+      width: auto;
+      display: flex;
+    }
     .innovate-box {
       height: 400px;
       width: 350px;
-      margin: 10px;
+      margin: 30px;
       position: relative;
       h2 {
         color: $mainColor;
@@ -1037,6 +1040,70 @@ header {
       font-size: 16px;
       margin-top: 20px;
       font-weight: 200;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .innovate-container {
+    .inner-innovate-container {
+      .innovate-box {
+        width: 275px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .innovate-container {
+    height: auto;
+    width: 100%;
+
+    .inner-innovate-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+      .inner-innovate-container-wrapper {
+        display: flex;
+        justify-content: left;
+        width: 850px;
+        flex-wrap: wrap;
+        margin-left: 10%;
+
+        .innovate-box {
+          width: 40%;
+          margin-right: 5px;
+          margin-bottom: 0px;
+
+          .innovate-three {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .innovate-container {
+    height: auto;
+    width: 100%;
+    .inner-innovate-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+      margin-left: 10%;
+      .inner-innovate-container-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        .innovate-box {
+          width: 70%;
+          height: auto;
+          margin-right: 5px;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }
