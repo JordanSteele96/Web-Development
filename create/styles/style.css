@@ -879,11 +879,21 @@ header .bottom-nav .nav-links a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 100%;
   height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.our-team-container .inner-our-team-container .our-team-people {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+}
+
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +901,7 @@ header .bottom-nav .nav-links a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33%;
+  width: 333px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -900,13 +910,13 @@ header .bottom-nav .nav-links a:hover {
   margin-left: 18px;
 }
 
-.our-team-container .inner-our-team-container .our-team-people img {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people img {
   border-radius: 100%;
   height: 190px;
   width: 190px;
 }
 
-.our-team-container .inner-our-team-container .our-team-people h2 {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people h2 {
   margin-top: 50px;
   margin-bottom: 10px;
   color: #737373;
@@ -914,25 +924,25 @@ header .bottom-nav .nav-links a:hover {
   font-size: 18px;
 }
 
-.our-team-container .inner-our-team-container .our-team-people h3 {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people h3 {
   margin-bottom: 20px;
   color: #bfbfbf;
   font-weight: 400;
   font-size: 12px;
 }
 
-.our-team-container .inner-our-team-container .our-team-people a {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people a {
   line-height: 1.7;
   color: #7a7a7a;
 }
 
-.our-team-container .inner-our-team-container .our-team-people .our-people-icons {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people .our-people-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.our-team-container .inner-our-team-container .our-team-people .our-people-icons .icon-our-people {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people .our-people-icons .icon-our-people {
   color: #737373;
   font-size: 30px;
   margin-top: 20px;
@@ -940,7 +950,7 @@ header .bottom-nav .nav-links a:hover {
   margin-left: 7px;
 }
 
-.our-team-container .inner-our-team-container .our-team-people .our-people-icons .icon-our-people:hover {
+.our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people .our-people-icons .icon-our-people:hover {
   color: #575757;
   -webkit-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
@@ -1398,6 +1408,9 @@ header .bottom-nav .nav-links a:hover {
     height: 375px;
     width: 375px;
   }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper a {
+    width: 290px;
+  }
 }
 
 @media screen and (max-width: 1036px) {
@@ -1592,6 +1605,28 @@ header .bottom-nav .nav-links a:hover {
     width: 300px;
     margin-right: 100px;
   }
+  .our-team-container {
+    height: auto;
+    margin-bottom: 70px;
+  }
+  .our-team-container .inner-our-team-container .our-team-person3 {
+    margin-top: 60px;
+  }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper {
+    width: 700px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people {
+    width: 333px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people a {
+    line-height: 1.7;
+    color: #7a7a7a;
+    width: 333px;
+  }
 }
 
 @media screen and (max-width: 753px) {
@@ -1706,6 +1741,7 @@ header .bottom-nav .nav-links a:hover {
   }
   .about-us-container {
     height: auto;
+    margin-bottom: 120px;
   }
   .about-us-container .inner-about-us-container {
     display: -webkit-box;
@@ -1753,6 +1789,38 @@ header .bottom-nav .nav-links a:hover {
     width: 510px;
     margin-right: 0px;
     margin-bottom: 50px;
+  }
+  .our-team-container {
+    height: auto;
+    margin-bottom: 70px;
+  }
+  .our-team-container .inner-our-team-container .our-team-person3 {
+    margin-top: 60px;
+  }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people {
+    width: 333px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .our-team-container .inner-our-team-container .inner-our-team-wrapper .our-team-people a {
+    line-height: 1.7;
+    color: #7a7a7a;
+    width: 503px;
   }
 }
 

@@ -651,6 +651,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1 {
     text-align: center;
     font-size: 48px;
@@ -659,52 +660,57 @@ header {
   }
   .inner-our-team-container {
     display: flex;
-    width: 60%;
+    width: 100%;
     height: 100%;
-
-    .our-team-people {
+    justify-content: center;
+    .inner-our-team-wrapper {
       display: flex;
-      flex-direction: column;
-      width: 33%;
-      text-align: center;
-      align-items: center;
-      margin-right: 18px;
-      margin-left: 18px;
-      img {
-        border-radius: 100%;
-        height: 190px;
-        width: 190px;
-      }
-      h2 {
-        margin-top: 50px;
-        margin-bottom: 10px;
-        color: $fontColor;
-        font-weight: 400;
-        font-size: 18px;
-      }
-      h3 {
-        margin-bottom: 20px;
-        color: #bfbfbf;
-        font-weight: 400;
-        font-size: 12px;
-      }
-      a {
-        line-height: 1.7;
-        color: #7a7a7a;
-      }
-      .our-people-icons {
-        display: flex;
+      width: 1000px;
 
-        .icon-our-people {
+      .our-team-people {
+        display: flex;
+        flex-direction: column;
+        width: 333px;
+        text-align: center;
+        align-items: center;
+        margin-right: 18px;
+        margin-left: 18px;
+        img {
+          border-radius: 100%;
+          height: 190px;
+          width: 190px;
+        }
+        h2 {
+          margin-top: 50px;
+          margin-bottom: 10px;
           color: $fontColor;
-          font-size: 30px;
-          margin-top: 20px;
-          margin-right: 7px;
-          margin-left: 7px;
-          &:hover {
-            color: #575757;
-            transition: 0.15s ease-in;
-            cursor: pointer;
+          font-weight: 400;
+          font-size: 18px;
+        }
+        h3 {
+          margin-bottom: 20px;
+          color: #bfbfbf;
+          font-weight: 400;
+          font-size: 12px;
+        }
+        a {
+          line-height: 1.7;
+          color: #7a7a7a;
+        }
+        .our-people-icons {
+          display: flex;
+
+          .icon-our-people {
+            color: $fontColor;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-right: 7px;
+            margin-left: 7px;
+            &:hover {
+              color: #575757;
+              transition: 0.15s ease-in;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -1081,6 +1087,16 @@ header {
       }
     }
   }
+
+  .our-team-container {
+    .inner-our-team-container {
+      .inner-our-team-wrapper {
+        a {
+          width: 290px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1036px) {
@@ -1262,6 +1278,33 @@ header {
       }
     }
   }
+
+  .our-team-container {
+    height: auto;
+    margin-bottom: 70px;
+
+    .inner-our-team-container {
+      .our-team-person3 {
+        margin-top: 60px;
+      }
+      .inner-our-team-wrapper {
+        width: 700px;
+        flex-wrap: wrap;
+
+        .our-team-people {
+          width: 333px;
+          margin-right: 0px;
+          margin-left: 0px;
+
+          a {
+            line-height: 1.7;
+            color: #7a7a7a;
+            width: 333px; //changed
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 753px) {
   .innovate-container {
@@ -1381,6 +1424,7 @@ header {
 
   .about-us-container {
     height: auto;
+    margin-bottom: 120px;
     .inner-about-us-container {
       display: flex;
       flex-direction: column-reverse;
@@ -1417,7 +1461,38 @@ header {
       }
     }
   }
+
+  .our-team-container {
+    height: auto;
+    margin-bottom: 70px;
+
+    .inner-our-team-container {
+      .our-team-person3 {
+        margin-top: 60px;
+      }
+      .inner-our-team-wrapper {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .our-team-people {
+          width: 333px;
+          margin-right: 0px;
+          margin-left: 0px;
+
+          a {
+            line-height: 1.7;
+            color: #7a7a7a;
+            width: 503px; //changed
+          }
+        }
+      }
+    }
+  }
 }
+
 @media screen and (max-width: 1201px) {
   .black-box-container {
     margin-bottom: 100px;
