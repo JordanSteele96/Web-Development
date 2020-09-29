@@ -775,12 +775,13 @@ header .bottom-nav .nav-links a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 80px;
-  width: 60%;
+  width: 1200px;
   height: 100%;
+  margin-left: 20px;
 }
 
 .about-us-container .inner-about-us-container .about-us-left {
-  width: 60%;
+  width: 550px;
   margin-right: 80px;
 }
 
@@ -791,7 +792,7 @@ header .bottom-nav .nav-links a:hover {
 }
 
 .about-us-container .inner-about-us-container .about-us-left h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 200;
   line-height: 33px;
   color: #737373;
@@ -834,6 +835,14 @@ header .bottom-nav .nav-links a:hover {
   margin-bottom: 20px;
 }
 
+.about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-left {
+  width: 700px;
+}
+
+.about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-right {
+  width: 700px;
+}
+
 .about-us-container .inner-about-us-container .about-us-right {
   width: 40%;
 }
@@ -842,6 +851,7 @@ header .bottom-nav .nav-links a:hover {
   height: 450px;
   width: 450px;
   border-radius: 5px;
+  margin-right: 30px;
 }
 
 .our-team-container {
@@ -1384,6 +1394,10 @@ header .bottom-nav .nav-links a:hover {
     -ms-grid-columns: 35% 35% 35%;
         grid-template-columns: 35% 35% 35%;
   }
+  .about-us-container .inner-about-us-container .about-us-right img {
+    height: 375px;
+    width: 375px;
+  }
 }
 
 @media screen and (max-width: 1036px) {
@@ -1553,6 +1567,31 @@ header .bottom-nav .nav-links a:hover {
     margin-right: 0px;
     width: 300px;
   }
+  .about-us-container {
+    height: auto;
+  }
+  .about-us-container .inner-about-us-container .about-us-left {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-left {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-right {
+    width: 400px;
+  }
+  .about-us-container .inner-about-us-container .about-us-right img {
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+  }
 }
 
 @media screen and (max-width: 753px) {
@@ -1665,6 +1704,56 @@ header .bottom-nav .nav-links a:hover {
     width: 100%;
     margin-left: 0px;
   }
+  .about-us-container {
+    height: auto;
+  }
+  .about-us-container .inner-about-us-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-us-container .inner-about-us-container .about-us-left {
+    width: 510px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container h2 {
+    margin-right: 0px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-left {
+    width: 510px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-right {
+    width: 510px;
+  }
+  .about-us-container .inner-about-us-container .about-us-right {
+    width: 97%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us-container .inner-about-us-container .about-us-right img {
+    height: 510px;
+    width: 510px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 1201px) {
@@ -1681,6 +1770,22 @@ header .bottom-nav .nav-links a:hover {
   .black-box-container .blackbox .blackbox-right {
     width: 53%;
     padding: 35px;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .about-us-container .inner-about-us-container .about-us-left {
+    width: 450px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-left {
+    width: 450px;
+  }
+  .about-us-container .inner-about-us-container .about-us-left .about-bottom-container .about-bottom-right {
+    width: 450px;
+  }
+  .about-us-container .inner-about-us-container .about-us-right img {
+    height: 450px;
+    width: 450px;
   }
 }
 /*# sourceMappingURL=style.css.map */
