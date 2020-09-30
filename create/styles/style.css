@@ -1682,12 +1682,13 @@ header .bottom-nav .nav-links a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin-bottom: 0px;
     height: 1150px;
-    margin-left: 10%;
+    margin-left: 0%;
+    width: 100%;
   }
   .innovate-container .inner-innovate-container .inner-innovate-container-wrapper {
     display: -webkit-box;
@@ -1698,9 +1699,11 @@ header .bottom-nav .nav-links a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 10%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .innovate-container .inner-innovate-container .inner-innovate-container-wrapper .innovate-box {
-    width: 70%;
+    width: 85%;
     height: auto;
     margin-right: 5px;
     margin-bottom: 20px;
