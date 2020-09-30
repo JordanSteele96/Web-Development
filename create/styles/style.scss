@@ -1521,14 +1521,14 @@ header {
         justify-content: center;
 
         .our-team-people {
-          width: 333px;
+          width: 329px;
           margin-right: 0px;
           margin-left: 0px;
 
           a {
             line-height: 1.7;
             color: #7a7a7a;
-            width: 503px; //changed
+            width: 440px; //changed
           }
         }
       }
@@ -1537,94 +1537,26 @@ header {
 
   .blog-container {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid #e8e8e8;
     width: 100%;
-    h1 {
-      text-align: center;
-      font-size: 48px;
-      margin-bottom: 60px;
-      font-weight: 500;
-      margin-top: 70px;
-    }
-    .inner-blog-container {
-      display: flex;
 
-      width: 90%;
-      margin: 0px;
-      height: 100%;
+    .inner-blog-container {
       .inner-blog-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
         margin: 0px;
 
         .blog-section {
           margin: 0px 0px 0px 0px;
-          width: 460px;
-          display: flex;
-
-          flex-direction: column;
-          justify-content: center;
+          width: 490px;
           flex-wrap: nowrap;
           img {
             height: 475px;
             width: 475px;
           }
-          h1 {
-            color: $mainColor;
-            text-align: left;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0px 0px 0px 0px;
-
-            transition: 0.15s ease-in;
-            &:hover {
-              color: #1bb3a0;
-              transition: 0.15s ease-in;
-              cursor: pointer;
-            }
-          }
-          h2 {
-            font-size: 16px;
-            color: #bfbfbf;
-            font-weight: 200;
-            margin-bottom: 25px;
-          }
-          a {
-            font-size: 15.5px;
-            color: #808080;
-            font-weight: 400;
-            line-height: 25px;
-          }
           h3 {
-            color: $mainColor;
-            margin-top: 20px;
-            font-size: 15px;
-            font-weight: 500;
-            transition: 0.15s ease-in;
             margin-bottom: 70px;
-
-            &:hover {
-              color: #1bb3a0;
-              transition: 0.15s ease-in;
-              cursor: pointer;
-            }
-          }
-          span {
-            color: $mainColor;
-            margin-top: 20px;
-            font-size: 15px;
-            font-weight: 500;
-            transition: 0.15s ease-in;
-            &:hover {
-              color: #1bb3a0;
-              transition: 0.15s ease-in;
-              cursor: pointer;
-            }
           }
         }
       }
