@@ -1,0 +1,138 @@
+.contact-us-container {
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    margin-top: 70px;
+  }
+  .contact-us-inner-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 850px;
+  }
+  .contact-us-inner-container-left {
+    height: 100%;
+    width: 55%;
+    background-color: #fff;
+    padding: 50px 50px 50px 50px;
+
+    h2 {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .contact-grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 20% 20% 20% 40% 20%;
+      grid-template-areas:
+        "first-name last-name"
+        "email email"
+        "subject subject"
+        "message message"
+        "contact-button contact-button";
+
+      label {
+        margin-bottom: 120px;
+      }
+      input {
+        border-radius: 20px;
+        height: 45px;
+        border: 1px solid #b6b6b6;
+        margin-top: 12px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $fontColor;
+        transition: 0.15s ease-in;
+        &:focus {
+          outline: none;
+          border: 1px solid $mainColor;
+        }
+      }
+      textarea {
+        border-radius: 20px;
+        height: 45px;
+        border: 1px solid #b6b6b6;
+        margin-top: 12px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $fontColor;
+        transition: 0.15s ease-in;
+        &:focus {
+          outline: none;
+          border: 1px solid $mainColor;
+        }
+      }
+      .input-small {
+        width: 100%;
+      }
+      .input-medium {
+        width: 200%;
+      }
+      .input-large {
+        width: 200%;
+        height: 200px;
+        resize: none;
+      }
+      .first-name {
+        margin-right: 15px;
+      }
+      .last-name {
+        margin-left: 15px;
+      }
+      .contact-button {
+        button {
+          margin-top: 30px;
+          border-radius: 50px;
+          border: none;
+          height: 50px;
+          width: 150px;
+          background-color: $mainColor;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .contact-us-inner-container-right {
+    height: 40%;
+    width: 42%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    .contact-right {
+      margin-bottom: 40px;
+      h1 {
+        text-align: left;
+        font-size: 18px;
+        margin: 0px;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+      h2 {
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 400;
+      }
+      span {
+        color: $mainColor;
+      }
+    }
+  }
+}
