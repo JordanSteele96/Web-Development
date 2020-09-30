@@ -736,61 +736,64 @@ header {
     justify-content: center;
     width: 60%;
     height: 100%;
-    .blog-section {
-      margin: 10px 9px 0px 10px;
-      img {
-        height: 350px;
-        width: 350px;
-      }
-      h1 {
-        color: $mainColor;
-        text-align: left;
-        font-size: 20px;
-        font-weight: 500;
-        margin: 30px 0px 10px 0px;
-        width: 90%;
-        transition: 0.15s ease-in;
-        &:hover {
-          color: #1bb3a0;
-          transition: 0.15s ease-in;
-          cursor: pointer;
+    .inner-blog-wrapper {
+      display: flex;
+      .blog-section {
+        margin: 10px 9px 0px 10px;
+        img {
+          height: 350px;
+          width: 350px;
         }
-      }
-      h2 {
-        font-size: 16px;
-        color: #bfbfbf;
-        font-weight: 200;
-        margin-bottom: 25px;
-      }
-      a {
-        font-size: 15.5px;
-        color: #808080;
-        font-weight: 400;
-        line-height: 25px;
-      }
-      h3 {
-        color: $mainColor;
-        margin-top: 20px;
-        font-size: 15px;
-        font-weight: 500;
-        transition: 0.15s ease-in;
+        h1 {
+          color: $mainColor;
+          text-align: left;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 30px 0px 10px 0px;
+          width: 90%;
+          transition: 0.15s ease-in;
+          &:hover {
+            color: #1bb3a0;
+            transition: 0.15s ease-in;
+            cursor: pointer;
+          }
+        }
+        h2 {
+          font-size: 16px;
+          color: #bfbfbf;
+          font-weight: 200;
+          margin-bottom: 25px;
+        }
+        a {
+          font-size: 15.5px;
+          color: #808080;
+          font-weight: 400;
+          line-height: 25px;
+        }
+        h3 {
+          color: $mainColor;
+          margin-top: 20px;
+          font-size: 15px;
+          font-weight: 500;
+          transition: 0.15s ease-in;
 
-        &:hover {
-          color: #1bb3a0;
-          transition: 0.15s ease-in;
-          cursor: pointer;
+          &:hover {
+            color: #1bb3a0;
+            transition: 0.15s ease-in;
+            cursor: pointer;
+          }
         }
-      }
-      span {
-        color: $mainColor;
-        margin-top: 20px;
-        font-size: 15px;
-        font-weight: 500;
-        transition: 0.15s ease-in;
-        &:hover {
-          color: #1bb3a0;
+        span {
+          color: $mainColor;
+          margin-top: 20px;
+          font-size: 15px;
+          font-weight: 500;
           transition: 0.15s ease-in;
-          cursor: pointer;
+          &:hover {
+            color: #1bb3a0;
+            transition: 0.15s ease-in;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -1097,6 +1100,19 @@ header {
       }
     }
   }
+
+  .blog-container {
+    .inner-blog-container {
+      .inner-blog-wrapper {
+        .blog-section {
+          img {
+            height: 300px; //changed
+            width: 300px; //changed
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1036px) {
@@ -1305,6 +1321,33 @@ header {
       }
     }
   }
+
+  .blog-container {
+    height: 1600px;
+    border-top: 1px solid #e8e8e8;
+
+    .inner-blog-container {
+      display: flex;
+      width: 668px;
+      height: 100%;
+      margin: 0px;
+      margin-left: 15px;
+      margin-bottom: 100px;
+
+      .inner-blog-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .blog-section-three {
+          margin-top: 0px;
+        }
+        .blog-section {
+          margin: 10px 9px 0px 10px;
+          width: 315px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 753px) {
   .innovate-container {
@@ -1491,8 +1534,103 @@ header {
       }
     }
   }
-}
 
+  .blog-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 60px;
+      font-weight: 500;
+      margin-top: 70px;
+    }
+    .inner-blog-container {
+      display: flex;
+
+      width: 90%;
+      margin: 0px;
+      height: 100%;
+      .inner-blog-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+
+        .blog-section {
+          margin: 0px 0px 0px 0px;
+          width: 460px;
+          display: flex;
+
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: nowrap;
+          img {
+            height: 475px;
+            width: 475px;
+          }
+          h1 {
+            color: $mainColor;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0px 0px 0px 0px;
+
+            transition: 0.15s ease-in;
+            &:hover {
+              color: #1bb3a0;
+              transition: 0.15s ease-in;
+              cursor: pointer;
+            }
+          }
+          h2 {
+            font-size: 16px;
+            color: #bfbfbf;
+            font-weight: 200;
+            margin-bottom: 25px;
+          }
+          a {
+            font-size: 15.5px;
+            color: #808080;
+            font-weight: 400;
+            line-height: 25px;
+          }
+          h3 {
+            color: $mainColor;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.15s ease-in;
+            margin-bottom: 70px;
+
+            &:hover {
+              color: #1bb3a0;
+              transition: 0.15s ease-in;
+              cursor: pointer;
+            }
+          }
+          span {
+            color: $mainColor;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.15s ease-in;
+            &:hover {
+              color: #1bb3a0;
+              transition: 0.15s ease-in;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1201px) {
   .black-box-container {
     margin-bottom: 100px;
