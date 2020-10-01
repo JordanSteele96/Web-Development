@@ -196,6 +196,8 @@ header .bottom-nav .nav-links a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 70%;
+  text-align: center;
 }
 
 .banner .banner-text h1 {
@@ -775,7 +777,7 @@ header .bottom-nav .nav-links a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 80px;
-  width: 1200px;
+  width: 1000px;
   height: 100%;
   margin-left: 20px;
 }
