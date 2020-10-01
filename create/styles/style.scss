@@ -963,7 +963,7 @@ header {
     margin-top: 100px;
 
     .lets-get-started-middle {
-      width: 60%;
+      width: 1100px;
       display: flex;
       border-bottom: 1px solid #494949;
 
@@ -984,7 +984,7 @@ header {
         }
       }
       .lets-get-started-about-us {
-        width: 50%;
+        width: 700px;
         margin-right: 90px;
         h2 {
           line-height: 1.7;
@@ -1106,8 +1106,8 @@ header {
       .inner-blog-wrapper {
         .blog-section {
           img {
-            height: 300px; //changed
-            width: 300px; //changed
+            height: 300px;
+            width: 300px;
           }
         }
       }
@@ -1116,6 +1116,41 @@ header {
   .contact-us-container {
     .contact-us-inner-container {
       width: 875px;
+    }
+  }
+  .footer-container {
+    .lets-get-started-middle-wrapper {
+      .lets-get-started-middle {
+        width: 900px;
+
+        .lets-get-started-about-us {
+          width: 500px;
+          margin-right: 50px;
+        }
+        .lets-get-started-features {
+          h2 {
+            margin-top: 0px;
+            font-weight: 400;
+            transition: 0.15s ease-in;
+          }
+        }
+        .lets-get-started-follow-us {
+          .follow-us-icons-container {
+            i {
+              margin-right: 20px;
+            }
+          }
+        }
+        .lets-get-started-subscribe {
+          width: 40%;
+          .input-subscribe {
+            width: 70%;
+          }
+          input[type="submit"] {
+            width: 30%;
+          }
+        }
+      }
     }
   }
 }
@@ -1319,7 +1354,7 @@ header {
           a {
             line-height: 1.7;
             color: #7a7a7a;
-            width: 333px; //changed
+            width: 333px;
           }
         }
       }
@@ -1357,8 +1392,59 @@ header {
       width: 775px;
     }
   }
-}
 
+  .footer-container {
+    width: 100%;
+    height: 700px;
+    background-color: #333333;
+
+    .lets-get-started-container {
+      height: 17%;
+      width: 100%;
+      background-color: $mainColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: white;
+        font-weight: 500;
+      }
+    }
+    .lets-get-started-middle-wrapper {
+      .lets-get-started-middle {
+        width: 700px;
+
+        .lets-get-started-about-us {
+          width: 400px;
+          margin-right: 50px;
+        }
+        .lets-get-started-features {
+          h2 {
+            margin-top: 0px;
+            font-weight: 400;
+            transition: 0.15s ease-in;
+          }
+        }
+        .lets-get-started-follow-us {
+          .follow-us-icons-container {
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+        .lets-get-started-subscribe {
+          width: 40%;
+          .input-subscribe {
+            width: 60%;
+          }
+          input[type="submit"] {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 753px) {
   .innovate-container {
     height: auto;
@@ -1541,7 +1627,7 @@ header {
           a {
             line-height: 1.7;
             color: #7a7a7a;
-            width: 440px; //changed
+            width: 440px;
           }
         }
       }
@@ -1596,7 +1682,76 @@ header {
       width: 55%;
     }
   }
+
+  .footer-container {
+    height: auto;
+
+    .lets-get-started-container {
+      height: 100px;
+    }
+    .lets-get-started-middle-wrapper {
+      width: 100%;
+      height: auto;
+
+      margin-top: 50px;
+
+      .lets-get-started-middle {
+        width: 90%;
+
+        flex-direction: column;
+        align-items: center;
+
+        .lets-get-started-section {
+          width: 100%;
+          margin-right: 30px;
+        }
+        .lets-get-started-about-us {
+          width: 100%;
+          margin-right: 0px;
+        }
+        .lets-get-started-features {
+          width: 100%;
+          margin: 20px 0px 0px 0px;
+
+          h1 {
+            margin-bottom: 20px;
+          }
+          h2 {
+            margin-top: 0px;
+            font-weight: 400;
+            transition: 0.15s ease-in;
+          }
+        }
+        .lets-get-started-follow-us {
+          margin: 10px 0px 0px 0px;
+          .follow-us-icons-container {
+            width: 100%;
+
+            i {
+              margin-right: 30px;
+            }
+          }
+        }
+        .lets-get-started-subscribe {
+          width: 100%;
+          margin-right: 0px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          .input-subscribe {
+            width: 85%;
+          }
+          input[type="submit"] {
+            width: 15%;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding-bottom: 20px;
+    }
+  }
 }
+
 @media screen and (max-width: 1201px) {
   .black-box-container {
     margin-bottom: 100px;
