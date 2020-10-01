@@ -54,6 +54,7 @@ header {
   justify-content: center;
   width: 100%;
   background-color: white;
+  box-shadow: 0 8px 6px -6px black;
 
   .logo {
     font-weight: 500;
@@ -66,6 +67,7 @@ header {
     height: 100px;
     transition: 0.4s;
     z-index: 2;
+    box-shadow: 0 8px 6px -6px grey;
   }
   .wrapper {
     width: 100%;
@@ -167,6 +169,7 @@ header {
   top: 0;
   background-color: white;
   width: 50%;
+  box-shadow: 0px 6px 6px -3px rgba(163, 163, 163, 0.44);
 }
 .burger {
   display: none;
