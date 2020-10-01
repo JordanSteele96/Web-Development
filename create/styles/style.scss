@@ -40,10 +40,23 @@ span {
       color: white;
       font-weight: 600;
     }
+    span {
+      transition: 0.15s ease-in;
+      &:hover {
+        color: #1bb3a0;
+      }
+    }
     .social-media {
       display: flex;
-      width: 10%;
+      width: 100px;
       justify-content: space-between;
+      i {
+        transition: 0.15s ease-in;
+        &:hover {
+          color: #1bb3a0;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -1753,6 +1766,21 @@ header {
     }
     .footer-bottom {
       padding-bottom: 20px;
+    }
+  }
+
+  .top-bar-container {
+    .top-bar {
+      width: 90%;
+      .social-media {
+        width: 120px;
+      }
+    }
+  }
+
+  header {
+    .bottom-nav {
+      width: 90%;
     }
   }
 }
