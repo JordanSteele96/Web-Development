@@ -41,6 +41,6 @@ include_once 'includes/db-connect.php'
 
 </div>
 
-
+<a href ="controlpage.php">Control page</a>
 </body>
 </html>
