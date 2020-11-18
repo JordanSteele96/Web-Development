@@ -18,7 +18,7 @@ span {
 }
 
 .top-bar-container {
-  height: 43px;
+  height: 41px;
   width: 100%;
   background-color: #343a40;
   display: flex;
@@ -137,12 +137,12 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/create/images/hero_1.jpg");
   background-position: 50% 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .banner-text {
     display: flex;
