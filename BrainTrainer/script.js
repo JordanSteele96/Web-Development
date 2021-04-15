@@ -8,6 +8,8 @@ let userGuessArray = [];
 let usersScore = 0;
 document.getElementById("submitBtn").disabled = true;
 
+
+
 function createGridItems() {
   //creates the grid
   for (let i = 0; i < numberOfSquares; i++) {
@@ -34,6 +36,7 @@ function hideColors() {
     colorToPick = colorArray[Math.floor(Math.random() * numberOfSquares)];
     document.getElementById("idColor").style.backgroundColor = colorToPick;
     document.getElementById("submitBtn").disabled = false;
+    document.getElementById("box" + i).style.pointerEvents = 'auto';
   }
 }
 
@@ -47,26 +50,27 @@ document.querySelectorAll(".box").forEach((item) => {
     }
   });
 });
-
 function startGame() {
+
   colorArray = [];
   userGuessArray = [];
+
   // starts the game 1.makes array -> disables start btn-> loops over colorsArray and colors the tiles
   randomColor();
   document.getElementById("startBtn").disabled = true;
   document.getElementById("submitBtn").disabled = true;
   for (let i = 0; i < numberOfSquares; i++) {
     document.getElementById("box" + i).style.backgroundColor = colorArray[i];
-  }
+    document.getElementById("box" + i).style.pointerEvents = 'none';
+ 
+    }
   //userGuessArray = [];
-  setTimeout(hideColors, 6000);
+  setTimeout(hideColors, 5000);
 }
-
 function createUsersArray() {
   for (let i = 0; i < numberOfSquares; i++) {
     if (
-      document.getElementById("box" + i).style.backgroundColor !==
-      "darkslategrey"
+      document.getElementById("box" + i).style.backgroundColor !=="darkslategrey"
     ) {
       // if the box doesnt equal darkslategrey
       userGuessArray.push(
@@ -77,7 +81,6 @@ function createUsersArray() {
     }
   }
 }
-
 function compareArray() {
   let tempScore = 0;
   let numberOfSameColor = 0;
@@ -86,7 +89,8 @@ function compareArray() {
       // how many colorToPick in colorArray
       numberOfSameColor++;
     }
-    if (userGuessArray[i] === colorToPick && colorArray[i] === colorToPick) {
+    
+    if (userGuessArray[i] === colorToPick) {
       // How many same colors
       tempScore++;
     }
