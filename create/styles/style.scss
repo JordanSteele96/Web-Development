@@ -9,6 +9,9 @@ $fontColor: #737373;
 
 body {
   font-family: "Quicksand", sans-serif;
+overflow-x: hidden;
+
+
 }
 i {
   color: $mainColor;
@@ -108,6 +111,7 @@ header {
       li {
         list-style-type: none;
         display: inline-block;
+
       }
       a {
         text-decoration: none;
@@ -199,7 +203,7 @@ header {
   body {
     overflow-x: hidden;
   }
-
+ 
   .nav-links {
     position: absolute;
     right: 0px;
@@ -210,8 +214,8 @@ header {
     flex-direction: column;
     align-items: left;
     padding: 0px;
-    width: 30%;
-    transform: translateX(100%); // moves the container off the screen
+    width: 250px;
+    transform: translateX(101%); // moves the container off the screen
     transition: 0.25s ease-out;
     a {
       font-size: 20px;

@@ -6,6 +6,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
 }
 
 i {
@@ -17,7 +18,7 @@ span {
 }
 
 .top-bar-container {
-  height: 43px;
+  height: 41px;
   width: 100%;
   background-color: #343a40;
   display: -webkit-box;
@@ -193,6 +194,9 @@ header .bottom-nav .nav-links a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/create/images/hero_1.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/create/images/hero_1.jpg");
   background-position: 50% 25px;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,9 +206,6 @@ header .bottom-nav .nav-links a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .banner .banner-text {
@@ -293,9 +294,9 @@ header .bottom-nav .nav-links a:hover {
         -ms-flex-align: left;
             align-items: left;
     padding: 0px;
-    width: 30%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    width: 250px;
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
     -webkit-transition: 0.25s ease-out;
     transition: 0.25s ease-out;
   }
